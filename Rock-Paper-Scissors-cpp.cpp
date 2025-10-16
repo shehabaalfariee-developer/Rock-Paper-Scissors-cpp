@@ -1,7 +1,5 @@
 #include <iostream>
 #include <string>
-#include <cstdlib>
-#include <ctime>
 using namespace std;
 
 enum enWinner { Player1 = 1, Computer = 2, Draw = 3 };
@@ -182,8 +180,13 @@ void StartGame() {
     } while (PlayAgain == 'Y' || PlayAgain == 'y');
 }
 
+
 int main() {
+    
     srand((unsigned)time(NULL));
+    
     StartGame();
+    
     return 0;
 }
+
